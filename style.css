@@ -1,0 +1,106 @@
+/* style.css */
+
+body {
+  background-color: #f7f7f7;
+  font-family: 'Segoe UI', 'ヒラギノ角ゴ ProN', 'メイリオ', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 40px 32px;
+  width: 435px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #333;
+  letter-spacing: 0.1em;
+}
+
+#display {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Consolas', 'Menlo', 'Monaco', 'Courier New', monospace;
+  color: #007bff;
+  background: #f0f4ff;
+  padding: 24px 0;
+  margin-bottom: 32px;
+  border-radius: 8px;
+  letter-spacing: 0.08em;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.05);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+  min-width: 90px;
+}
+
+#startBtn {
+  background: #28a745;
+  color: #fff;
+}
+
+#stopBtn {
+  background: #dc3545;
+  color: #fff;
+}
+
+#resetBtn {
+  background: #6c757d;
+  color: #fff;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95vw;
+    padding: 28px 16px;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  button {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  
+  #display {
+    font-size: 2.5rem;
+  }
+}
